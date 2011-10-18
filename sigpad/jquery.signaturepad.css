@@ -21,6 +21,11 @@
 
 @media screen {
 
+body { 
+font: 13px helvetica,arial,freesans,clean,sans-serif;
+line-height: 1.4em;
+}
+
 .sigPad {
   margin: 0;
   padding: 0;
@@ -58,7 +63,8 @@
   margin: 1em 0 0 0;
   padding: 0.6em 0.6em 0.7em;
 
-  background-color: #f0e2eb;
+/*  background-color: #f0e2eb; */
+  background-color: #777;
   border: 0;
   border-radius: 8px;
   -moz-border-radius: 8px;
@@ -66,7 +72,7 @@
 
   cursor: pointer;
 
-  color: #888;
+  color: #fff;
   font: bold 1em/1.375 "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: left;
   }
@@ -74,7 +80,7 @@
 .sigPad button:hover {
   background-color: #ccc;
 
-  color: #fff;
+  color: #666;
   }
 
 .sig {
