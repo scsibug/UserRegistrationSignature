@@ -24,7 +24,7 @@
 .sigPad {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 400px;
   }
 
 .sigPad label {
@@ -41,11 +41,11 @@
   }
 
 .sigPad input {
-  margin: 0;
-  padding: 0.2em 0;
-  width: 198px;
+  margin: 0.1em;
+  padding: 0.2em 0 0.2em;
+  width: 400px;
 
-  border: 1px solid #b0879f;
+  border: 1px solid #777;
 
   font-size: 1em;
   }
@@ -66,13 +66,13 @@
 
   cursor: pointer;
 
-  color: #ea088c;
+  color: #888;
   font: bold 1em/1.375 "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: left;
   }
 
 .sigPad button:hover {
-  background-color: #ea088c;
+  background-color: #ccc;
 
   color: #fff;
   }
@@ -116,7 +116,7 @@
     .sigNav a.current,
     .sigNav a.current:link,
     .sigNav a.current:visited {
-      background-color: #b0879f;
+      background-color: #888;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       -moz-border-radius-topleft: 8px;
@@ -148,13 +148,13 @@
 
 .sigWrapper {
   clear: both;
-  height: 55px;
+  height: 200px;
 
   border: 1px solid #eee;
   }
 
 .sigWrapper.current {
-  border-color: #b0879f;
+  border-color: #777;
   }
 
 .signed .sigWrapper {
@@ -165,12 +165,12 @@
   position: relative;
   }
 
-  .current .pad {
-    cursor: url("pen.png") 8 8, crosshair;
-    }
+.current .pad {
+  cursor: url("pen.png") 8 8, crosshair;
+}
 
 .typed {
-  height: 55px;
+  height: 200px;
   margin: 0;
   padding: 0 5px;
   position: absolute;

@@ -13,7 +13,7 @@
 <body>
 <script> 
   $(document).ready(function(){
-  $('.sigPad').signaturePad({drawOnly:true});
+  $('.sigPad').signaturePad({drawOnly:true, lineTop:140});
   });
 </script> 
 
@@ -38,13 +38,13 @@
 <p class="drawItDesc">Draw your signature</p>
 
 <ul class="sigNav"> 
-  <li class="drawIt"><a href="#draw-it" >Draw It</a></li> 
+  <li class="drawIt"><a href="#draw-it" >Signature</a></li> 
   <li class="clearButton"><a href="#clear">Clear</a></li>
 </ul> 
 
 <div class="sig sigWrapper">
   <div class="typed"></div> 
-  <canvas class="pad" width="198" height="55"></canvas> 
+  <canvas class="pad" width="395" height="200"></canvas> 
   <input type="hidden" name="output" class="output">
 </div>
 
