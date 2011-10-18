@@ -4,7 +4,7 @@
 <head>
 <title>Waiver Form</title>
 <!--[if lt IE 9]><script src="sigpad/flashcanvas.js"></script><![endif]-->
-<script src="sigpad/jquery.min.js"></script>
+<script src="jquery-1.6.4.min.js"></script>
 <script src="sigpad/jquery.signaturepad.min.js"></script>
 <script src="sigpad/json2.min.js"></script>
 <link rel="stylesheet" href="sigpad/jquery.signaturepad.css">
@@ -34,12 +34,20 @@
 <input name="client_name" placeholder="Full Name"/>
 <input name="phone" placeholder="Phone Number"/>
 <input type="email" name="email" placeholder="E-mail Address"/>
-<p class="drawItDesc">Draw your signature</p><ul class="sigNav"> 
-<li class="drawIt"><a href="#draw-it" >Draw It</a></li> 
-<li class="clearButton"><a href="#clear">Clear</a></li></ul> 
-<div class="sig sigWrapper"><div class="typed"></div> 
-<canvas class="pad" width="198" height="55"></canvas> 
-<input type="hidden" name="output" class="output"></div>
+
+<p class="drawItDesc">Draw your signature</p>
+
+<ul class="sigNav"> 
+  <li class="drawIt"><a href="#draw-it" >Draw It</a></li> 
+  <li class="clearButton"><a href="#clear">Clear</a></li>
+</ul> 
+
+<div class="sig sigWrapper">
+  <div class="typed"></div> 
+  <canvas class="pad" width="198" height="55"></canvas> 
+  <input type="hidden" name="output" class="output">
+</div>
+
 <button type="submit">I accept the terms of this agreement</button>
 </form>
 
