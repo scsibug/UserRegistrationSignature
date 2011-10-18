@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Waiver Form</title>
+<!--[if lt IE 9]><script src="sigpad/flashcanvas.js"></script><![endif]-->
+<script src="sigpad/jquery.min.js"></script>
+<script src="sigpad/jquery.signaturepad.min.js"></script>
+<script src="sigpad/json2.min.js"></script>
+<link rel="stylesheet" href="sigpad/jquery.signaturepad.css">
+</head>
+
+<body>
+<script> 
+  $(document).ready(function(){
+  $('.sigPad').signaturePad({drawOnly:true});
+  });
+</script> 
+
+<h1>Waiver Form</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi leo. Aenean augue sem, rutrum porta ornare sit amet, faucibus ut massa. Ut eget arcu enim. Maecenas lacinia nulla non dolor ornare quis auctor diam pretium. Donec dapibus, lorem sit amet consequat dictum, felis nisl tristique elit, vitae pretium diam elit sit amet sapien. Maecenas sed ante lorem. Integer lectus augue, consequat faucibus varius vel, luctus sed justo. Aenean eget gravida erat. Donec interdum, sapien eget blandit commodo, orci elit molestie arcu, ut vestibulum nisl diam sit amet metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+<h2>Duis at consectetur quam</h2>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Morbi mollis leo sed eros mattis vel elementum ante porttitor.</li>
+<li>Mauris eu lacus orci, id mattis ligula.</li>
+<li>Nam sed ligula sit amet libero facilisis molestie.</li>
+<li>Vivamus rhoncus luctus sapien, nec condimentum risus varius ac.</li>
+</ul>
+
+<form method="post" action="#" class="sigPad"> 
+<input name="client_name" placeholder="Full Name"/>
+<input name="phone" placeholder="Phone Number"/>
+<input type="email" name="email" placeholder="E-mail Address"/>
+<p class="drawItDesc">Draw your signature</p><ul class="sigNav"> 
+<li class="drawIt"><a href="#draw-it" >Draw It</a></li> 
+<li class="clearButton"><a href="#clear">Clear</a></li></ul> 
+<div class="sig sigWrapper"><div class="typed"></div> 
+<canvas class="pad" width="198" height="55"></canvas> 
+<input type="hidden" name="output" class="output"></div>
+<button type="submit">I accept the terms of this agreement</button>
+</form>
+
+</body>
+</html>
